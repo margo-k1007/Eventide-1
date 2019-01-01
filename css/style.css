@@ -1,0 +1,518 @@
+/**
+ * Table of Contents
+ *
+ * 1.0 - Base
+ * 2.0 - Header
+ * 3.0 - Footer
+ * 4.0 - Landing Page
+ *   4.1 - Speakers Section
+ *   4.2 - Events Section
+ *   4.3 - Form Section
+ *   4.4 - Sponsors Section
+ *   4.5 - Map Section
+ */
+
+
+/*======
+*
+* 1.0 - Base
+*
+======*/
+/* html, 
+body {
+    height: 100%;
+} */
+body {
+   min-width: 320px;
+
+   color: #828282;
+   background-color: #fff;
+
+   font-family: "Ubuntu", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+}
+a {
+   color: #2cc7c1;
+
+   font-family: "Monserrat", sans-serif;
+   font-size: 17px;
+   font-weight: 700;
+}
+a:hover {
+   color: #2cc7c1;
+}
+img {
+   max-width: 100%;
+   height: auto;
+}
+section {
+   position: relative;
+}
+h2 {
+   margin-top: 0;
+
+   text-transform: uppercase;
+
+   font-family: "Monserrat", sans-serif;
+   font-size: 30px;
+}
+.btn {
+   margin: 0 10px;
+   padding: 10px 20px;
+
+   transition: background 0.5s;
+   text-transform: uppercase;
+
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+
+   font-family: "Monserrat", sans-serif;
+   font-size: 17px;
+}
+.btn-primary {
+   background-color: #7ea4e8;
+}
+.btn-default:hover {
+   background-color: #6787c2;
+}
+.btn-default {
+   background-color: #6a7079;
+}
+.btn-default:hover {
+   color: #fff;
+   background-color: #474c52;
+}
+/* @media Base */
+@media all and (max-width: 1800px) {
+   /* Your selectors */
+}
+/*======
+ *
+ * 2.0 - Header
+ *
+ ======*/
+#header {
+   height: 100vh;
+
+/* height: 100%; */
+   min-height: 500px;
+
+   background: url(../img/2.jpg) 50% 50% no-repeat;
+   -webkit-background-size: cover;
+           background-size: cover;
+}
+.section-table {
+   display: table;
+
+   width: 100%;
+   height: 100%;
+}
+.section-row {
+   display: table-row;
+}
+.section-cell {
+   display: table-cell;
+
+   text-align: center;
+   vertical-align: middle;
+}
+.section-center {
+   display: inline-block;
+
+   max-width: 550px;
+}
+#header h1 {
+   text-transform: uppercase;
+
+   color: #fff;
+
+   font-family: "Monserrat", sans-serif;
+   font-size: 31px;
+   font-weight: 700;
+}
+#header p {
+   color: #fff;
+
+   font-family: "Ubuntu", sans-serif;
+   font-size: 20px;
+}
+/* @media Header */
+@media all and (max-width: 600px) {
+   #header {
+      min-height: 300px;
+   }
+   .section-center {
+      max-width: 320px;
+   }
+   #header h1 {
+      font-size: 20px;
+   }
+   #header p {
+      font-size: 16px;
+   }
+   .section-btn {
+      font-size: 15px;
+   }
+}
+/* --- / --- */
+
+/*======
+*
+* 3.0 - Footer
+*
+======*/
+#contacts {
+   padding: 70px 0;
+
+   background: #525b64;
+}
+#contacts h3,
+#contacts h4 {
+   margin: 0 0 25px;
+
+   color: #fff;
+}
+#contacts h3 span {
+   font-weight: 700;
+}
+#contacts h4 {
+   font-size: 20px;
+}
+#contacts p {
+   color: #cdd0d2;
+}
+#contacts a {
+   font-weight: 500;
+   color: #2cc7c1;
+}
+#contacts i {
+    color: #2cc7c1;
+    margin-right: 10px;
+}
+.social img {
+    margin-right: 20px;
+}
+#copy {
+    background: #3f464c;
+    padding: 15px 0;
+}
+#copy p {
+    margin-bottom: 0;
+    color: #cacaca;
+    font-size: 14px;
+}
+#copy p span {
+    font-weight: 500;
+}
+
+/* @media Footer */
+@media all and (max-width: 992px) {
+    #contacts {
+        padding: 20px 0;
+    }
+}
+/* --- / --- */
+
+/*======
+*
+* 3.0 - Landing Page
+*
+======*/
+/* 4.1 - Speakers Section */
+#speakers {
+   padding: 90px 0;
+
+   border-bottom: 2px solid #f0f0f1;
+}
+#speakers h2 {
+   color: #828689;
+}
+.large {
+   margin-bottom: 20px;
+
+   color: #828689;
+
+   font-size: 22px;
+}
+.section-tabs {
+   border: 3px solid #ececec;
+   border-radius: 2px;
+}
+.section-tabs .nav-tabs li:not(.active) {
+   background: #ececec;
+}
+.section-tabs .nav-tabs.nav-justified li a,
+.section-tabs .nav-tabs.nav-justified li.active a,
+.section-tabs .nav-tabs.nav-justified li.active a:hover,
+.section-tabs .nav-tabs.nav-justified li.active a:focus {
+   text-transform: uppercase;
+
+   border: none;
+   border-radius: 0;
+   outline: none;
+
+   font-family: "Ubuntu", sans-serif;
+   font-size: 18px;
+   font-weight: 700;
+}
+.section-tabs .nav-tabs li a {
+   color: #abb1ba;
+}
+.section-tabs .nav-tabs li.active a {
+   color: #9097a1;
+}
+.section-tabs .tab-content {
+   padding: 25px 20px;
+}
+.section-tabs .tab-content ul {
+   padding-left: 10px;
+}
+.section-tabs .tab-content ul {
+   line-height: 30px;
+}
+.section-tabs .tab-content ul li i {
+   margin-right: 5px;
+
+   color: #2cc7c1;
+
+   font-size: 16px;
+}
+.speakers-head {
+   margin-top: 100px;
+   margin-bottom: 60px;
+}
+.speakers-head h2 {
+   color: #6a7079;
+}
+.speakers-body h3,
+.speakers-body .modal-title {
+   text-transform: uppercase;
+
+   color: #777a7d;
+
+   font-size: 20px;
+}
+.item > div {
+   position: relative;
+}
+.front {
+   position: absolute;
+
+   width: 140px;
+   height: 140px;
+
+   cursor: pointer;
+   transition: opacity 0.3s;
+}
+
+.back {
+   display: inline-block;
+
+   width: 140px;
+   height: 140px;
+
+   vertical-align: top;
+
+   opacity: 0;
+   border-radius: 50%;
+   background: #6bd8d3;
+}
+.back i {
+   color: #fff;
+
+   font-size: 30px;
+   line-height: 140px;
+}
+.item > div:hover .front {
+   opacity: 0.2;
+}
+.item > div:hover .back {
+   opacity: 1;
+}
+.item > div:hover h3 {
+   color: #6bd8d3;
+}
+.speakers-footer {
+   margin-top: 70px;
+}
+
+/* 4.2 - Events Section */
+#events {
+   padding: 90px 0;
+}
+.link {
+   text-transform: uppercase;
+
+   font-size: 17px;
+}
+.tab-collapse {
+   margin-bottom: 20px;
+}
+.time {
+   margin-right: 25px;
+   padding: 5px;
+
+   color: #fff;
+   border-radius: 2px;
+   background: #2cc7c1;
+
+   font-size: 17px;
+   font-weight: 500;
+}
+.collapse-link {
+   color: #747a84;
+
+   font-size: 18px;
+   font-weight: 500;
+}
+.collapse-link:honer {
+   color: #747a84;
+}
+.collapse-state {
+   color: #2cc7c1;
+}
+.collapse p {
+   color: #999;
+}
+.row-item {
+   margin-top: 100px;
+}
+.carousel-indicators {
+   bottom: 10px;
+   left: 0;
+
+   width: auto;
+   margin: 0;
+   margin-left: 20px;
+}
+.carousel-indicators li {
+   width: 12px;
+   height: 12px;
+
+   border: 1px solid #2cc7c1;
+   background: transparent;
+}
+.carousel-indicators li.active {
+   width: 14px;
+   height: 14px;
+
+   background: #2cc7c1;
+}
+/* 4.3 - Form Section */
+#form {
+   padding: 90px 0;
+
+   background: #f3f3f3;
+}
+.section-form {
+   margin-top: 50px;
+   padding: 40px;
+
+   border-radius: 2px;
+   background: #fff;
+}
+.section-form input,
+.section-form select {
+   height: 44px;
+   padding-right: 25px;
+
+   background: #efefef;
+}
+.form-control-feedback {
+   right: 10px;
+
+   line-height: 44px;
+}
+.has-success .form-control-feedback {
+   color: #2cc7c1;
+}
+.has-success .form-control,
+.section-form input.form-control:focus {
+   border: 2px solid #95e3e0;
+   background: #fff;
+   box-shadow: none;
+}
+/*поле select - размеры, фон, выравнивание*/
+.select2-container--default .select2-selection--single {
+   /* width: 100% !important; */
+   height: 44px;
+
+   text-align: left;
+
+   background: #efefef;
+}
+/*поле select - вертикальное выравнивание + цвет*/
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+   color: #bebebe;
+
+   line-height: 44px;
+}
+/*фон открытого поля select*/
+.select2-container--open .select2-selection--single {
+   background: #2cc7c1;
+}
+/*цвет открытого поля select*/
+.select2-container--open .select2-selection--single .select2-selection__rendered {
+   color: #fff;
+}
+/*выравнивание стрелки*/
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+   top: 10px;
+}
+/*скрываем placeholder*/
+li.select2-results__option:first-child {
+   display: none;
+}
+/*фон списка*/
+.select2-results__options,
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option[aria-selected="true"] {
+   background: #525b64;
+}
+/*цвет списка*/
+.select2-results__options {
+   color: #2cc7c1;
+}
+/* 4.4 - Sponsors Section */
+#sponsors {
+   padding: 60px 0;
+
+   background: #fff;
+}
+
+/* 4.5 - Map Section */
+
+/* @media Landing Page */
+@media all and (max-width: 992px) {
+   #speakers,
+   #events,
+   #form {
+      padding: 20px 0;
+   }
+   #sponsors {
+      padding: 20px 0 0;
+   }
+   .speakers-head,
+   .speakers-footer,
+   .row-item-col,
+   .item {
+      margin: 20px 0;
+   }
+   #events {
+      padding: 20px 0;
+   }
+   .row-item {
+      margin-top: 30px;
+   }
+   #sponsors img {
+      margin-bottom: 20px;
+   }
+}
+@media all and (max-width: 480px) {
+   .row-item {
+      margin-top: 10px;
+   }
+}
+/* --- / --- */
